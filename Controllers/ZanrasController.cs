@@ -1,6 +1,8 @@
 namespace Org.Ktu.Isk.P175B602.FilmuNuoma.Controllers;
 
 using Microsoft.AspNetCore.Mvc;
+using Org.Ktu.Isk.P175B602.FilmuNuoma.Repositories;
+using Org.Ktu.Isk.P175B602.FilmuNuoma.Models;
 
 /// <summary>
 /// Controller for working with 'Zanras' entity.
@@ -58,7 +60,7 @@ public class ZanrasController : ControllerBase
 	/// <summary>
 	/// This is invoked when buttons are pressed in the editing form.
 	/// </summary>
-	/// <param name="id">ID of the entity being edited</param>		
+	/// <param name="id">ID of the entity being edited</param>
 	/// <param name="zanras">Entity model filled with latest data.</param>
 	/// <returns>Returns editing form view or redirects back to Index if save is successful.</returns>
 	[HttpPost]
@@ -73,7 +75,7 @@ public class ZanrasController : ControllerBase
 	}
 
 	/// <summary>
-	/// This is invoked when deletion is confirmed in deletion form.
+	/// This is invoked when deletion form is first opened in browser.
 	/// </summary>
 	/// <param name="id">ID of the entity to delete.</param>
 	/// <returns>Deletion form view.</returns>

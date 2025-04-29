@@ -1,4 +1,4 @@
-namespace Org.Ktu.Isk.P175B602.Autonuoma.Models;
+namespace Org.Ktu.Isk.P175B602.FilmuNuoma.Models;
 
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
